@@ -30,7 +30,7 @@ header img {
     width: 200px;
 }
 
-header nav button {
+header nav a {
     /* Estilização */
     text-decoration: underline;
     background: none;
@@ -40,9 +40,9 @@ header nav button {
     cursor: pointer;
 }
 
-header nav button:hover {
+header nav a:hover {
     text-decoration: none;
-    color: white;
+    color: blueviolet;
 
 }
 
@@ -117,6 +117,17 @@ header nav button:hover {
 
 .section__artigo li {
     padding: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Celulares */
