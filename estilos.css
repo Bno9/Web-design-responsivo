@@ -1,6 +1,6 @@
 * {
     margin: 0;
- }
+}
 
 body {
     height: 100vh;
@@ -8,13 +8,38 @@ body {
 }
 
 header {
-    background-color: rgb(105, 98, 98);
-    height: 10vh;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-height: 150px;
 }
 
-header nav{
+header nav {
+    display: flex;
+    gap: 40px;
     font-size: 1.2rem;
+}
+
+header img {
+    width: 200px;
+}
+
+
+header nav button {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+
+}
+
+header nav button:hover {
+    text-decoration: none;
+    color: white;
 
 }
 
@@ -24,7 +49,7 @@ header nav{
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    
+
 }
 
 section {
@@ -45,4 +70,46 @@ section p {
 
 section li {
     padding: 10px;
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    header {
+        min-height: 50px;
+    }
+
+
+    header nav {
+        font-size: 1.5rem;
+    }
+
+    section {
+        width: 70%;
+        max-width: 500px;
+        font-size: 1.3em;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    header {
+        min-height: 70px;
+    }
+
+    header nav {
+        font-size: 1.5rem;
+    }
+
+    section {
+        width: 80%;
+        max-width: 650px;
+        font-size: 1.3em;
+    }
 }

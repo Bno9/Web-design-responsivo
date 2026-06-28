@@ -10,13 +10,25 @@
 
 <body>
     <header>
-        <img src="" alt="">
-        <nav>A</nav>
+        <img src="codewave.png" alt="Logo codewave" srcset="
+        codewave500px.png 500w,
+        codewave256px.png 256w,
+        codewave128px.png 128w,
+        codewave64px.png 64w
+    " sizes="
+        (max-width: 768px) 128px,
+        200px
+    ">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#serviços">Serviços</a>           
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
 
     <div class="seções">
         <section>
-            <h1>Bem-vindo à CodeWave</h1>
+            <h1 id="home">Bem-vindo à CodeWave</h1>
             <p>
                 Criamos soluções digitais que ajudam empresas a crescer no mundo online.
                 Nosso diferencial é unir tecnologia, criatividade e estratégias personalizadas
@@ -34,7 +46,7 @@
         </section>
 
         <section>
-            <h2>Serviços</h2>
+            <h2 id="serviços">Serviços</h2>
             <ul>
                 <li>Desenvolvimento de sites e sistemas web</li>
                 <li>Design de interfaces modernas</li>
@@ -58,7 +70,7 @@
         </section>
 
         <section>
-            <h2>Contato</h2>
+            <h2 id="contato">Contato</h2>
             <p>Email: contato@codewave.com</p>
             <p>Telefone: (11) 99999-9999</p>
             <p>Endereço: Avenida Tecnologia, 100 - São Paulo</p>
