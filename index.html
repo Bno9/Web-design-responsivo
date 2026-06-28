@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header>
-        <img src="codewave.png" alt="Logo codewave" srcset="
+    <header class="header">
+        <img class="header__logo" src="codewave.png" alt="Logo codewave" srcset="
         codewave500px.png 500w,
         codewave256px.png 256w,
         codewave128px.png 128w,
@@ -19,10 +19,11 @@
         (max-width: 768px) 128px,
         200px
     ">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#serviços">Serviços</a>           
-            <a href="#contato">Contato</a>
+        <nav class="header__menu">
+            <a class="header__link" href="#home">Home</a>
+            <a class="header__link" href="#serviços">Serviços</a>
+            <a class="header__link" href="#contato">Contato</a>
+            <a class="header__link--inativo" href="#mais">Mais</a>
         </nav>
     </header>
 
@@ -76,10 +77,10 @@
             <p class="section__artigo--contato">Endereço: Avenida Tecnologia, 100 - São Paulo</p>
 
             <form>
-                <input class="section__artigo--formulario-input" type="text" placeholder="Nome">
-                <input class="section__artigo--formulario-input" type="email" placeholder="Email">
-                <textarea class="section__artigo--formulario-input" placeholder="Mensagem"></textarea>
-                <button class="section__artigo--formulario-botao ">Enviar</button>
+                <input class="formulario__input" type="text" placeholder="Nome">
+                <input class="formulario__input" type="email" placeholder="Email">
+                <textarea class="formulario__input" placeholder="Mensagem"></textarea>
+                <button class="formulario__botao ">Enviar</button>
             </form>
         </section>
     </div>
